@@ -1,5 +1,5 @@
 async function some() {
-    var response = await fetch("https://isu.ifmo.ru/pls/apex/f?p=2437:31:116454897633873:EXPORTPROFILE:NO:::");
+    var response = await fetch("https://isu.ifmo.ru/pls/apex/f?p=2437:31:"+document.querySelector('#pInstance').value+":EXPORTPROFILE:NO:::");
     var content = await response.blob();
     var reader = new FileReader();
     reader.readAsDataURL(content);
