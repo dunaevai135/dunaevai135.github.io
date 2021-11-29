@@ -11,7 +11,7 @@
     var email = cont1.slice(r1+71, r1+r2-3)
     var cont2 = data[1];
     var r1 = cont2.search('P110_FILE_ID')
-    var r2 = cont2.slice(r1).search('<style')
+    var r2 = cont2.slice(r1).search('style')
     var photo = cont2.slice(r1, r1+r2)
     var content = data[2];
     var reader = new FileReader();
