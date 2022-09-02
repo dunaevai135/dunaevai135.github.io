@@ -52,7 +52,7 @@
 
 			for (var i = 0; i < markers.length; i++) {
 				var marker = L.marker([markers[i]['o'], markers[i]['a']]);
-				marker.bindPopup(`<b>${markers[i]['n']}</b><br>${markers[i]['d']}`);
+				marker.bindPopup(`<b>${markers[i]['n']}</b><br>${markers[i]['d'].replaceAll("\n","<br>")}`);
 				markersCluster.addLayer(marker);
 			}
 			map.addLayer(markersCluster);
