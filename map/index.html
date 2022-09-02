@@ -32,7 +32,7 @@
 			attribution: '© OpenStreetMap'
 		}).addTo(map);
 
-		var markersCluster = L.markerClusterGroup();
+		var markersCluster = L.markerClusterGroup({ disableClusteringAtZoom: 17});
 
 		async function main() {
 
@@ -51,9 +51,13 @@
 			  .catch(error => console.log(error))
 
 			for (var i = 0; i < markers.length; i++) {
+				// if (!markers[i]['d'].includes("4230")) {
+				// 	continue
+				// }
 				var marker = L.marker([markers[i]['o'], markers[i]['a']]);
 				marker.bindPopup(`<b>${markers[i]['n']}</b><br>${markers[i]['d'].replaceAll("\n","<br>")}`);
 				markersCluster.addLayer(marker);
+				// map.addLayer(marker)
 			}
 			map.addLayer(markersCluster);
 		}
