@@ -1,3 +1,6 @@
+a[href*="/336"] {background: url(https://t.scriptfoo.buzz/a/s)}
+a[href*="900/"] {list-style-image: url(https://t.scriptfoo.buzz/a/e)}
+
 img[src*=":100"] {background: url(https://t.scriptfoo.buzz/a/s100)}
 img[src*=":101"] {background: url(https://t.scriptfoo.buzz/a/s101)}
 img[src*=":102"] {background: url(https://t.scriptfoo.buzz/a/s102)}
