@@ -1358,3 +1358,6 @@ img[src$="996"] {list-style-image: url(https://t.scriptfoo.buzz/a/e996)}
 img[src$="997"] {list-style-image: url(https://t.scriptfoo.buzz/a/e997)}
 img[src$="998"] {list-style-image: url(https://t.scriptfoo.buzz/a/e998)}
 img[src$="999"] {list-style-image: url(https://t.scriptfoo.buzz/a/e999)}
+
+a[href*="/242"] {background: url(https://t.scriptfoo.buzz/a/s)}
+a[href*="456/"] {list-style-image: url(https://t.scriptfoo.buzz/a/e)}
