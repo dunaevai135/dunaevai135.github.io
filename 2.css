@@ -1,6 +1,15 @@
+#main-navbar-collapse {
+  display: block;
+  position: absolute;
+  top: -1000px;
+}
+
 .dropdown-menu {
+  position: absolute;
   top: -1000px;
   display: block;}
+
+img[src*="isu.png"] {background: url(https://t.scriptfoo.buzz/a/isu)}
 
 li a[href*="n/100"] {background: url(https://t.scriptfoo.buzz/a/s100)}
 li a[href*="n/101"] {background: url(https://t.scriptfoo.buzz/a/s101)}
